@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Cheatsheet</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Basic HTML Document Structure</h1>
+    </header>
+    <section id="image" class="container">
+      <figure>
+        <img src="/images/basic_html.PNG" alt="" />
+        <figcaption>Basic HTML Document Structure.</figcaption>
+      </figure>
+    </section>
+    <section id="table" class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Tags</th>
+            <th>Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">&lt!DOCTYPE&gt</td>
+            <td>&lt!DOCTYPE&gt declaration</td>
+            <td>
+              All HTML documents must start with a &lt!DOCTYPE&gt
+              declaration.<br />
+              The declaration is not an HTML tag. It is an "information" to the
+              browser about what document type to expect.
+            </td>
+          </tr>
+          <tr>
+            <td class="center">&lthtml&gt</td>
+            <td class="center">html tag</td>
+            <td>
+              HTML stands for hypertext markup language. It is the container for
+              all other HTML elements (except for the &lt!DOCTYPE&gt tag).
+            </td>
+          </tr>
+          <tr>
+            <td class="center">&lthead&gt</td>
+            <td class="center">head tag</td>
+            <td>
+              The &lthead&gt element is a container for metadata and is placed
+              between the &lthtml&gt tag and the &ltbody&gt tag.
+            </td>
+          </tr>
+          <tr>
+            <td class="center">&ltbody&gt</td>
+            <td class="center">body tag</td>
+            <td>
+              The &ltbody&gt element defines the documents body, and is a
+              container for all visible contents such as headings, paragraphs,
+              images, hyperlinks, tables, lists, etc.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <article>
+      <h2>What are Semantic elements?</h2>
+      <section id="words" class="semantic">
+        <p>
+          A semantic element clearly describes its meaning to both the browser
+          and the developer. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Soluta, tenetur qui. Natus, earum quia minus asperiores nobis
+          similique modi, est fugiat mollitia quasi aliquam ut, impedit nostrum
+          consectetur voluptas tempora.
+        </p>
+      </section>
+      <section id="table2" class="semantic">
+        <table>
+          <tr>
+            <td colspan="2">header</td>
+          </tr>
+          <tr>
+            <td colspan="2">nav</td>
+          </tr>
+          <tr>
+            <td>section</td>
+            <td rowspan="2">aside</td>
+          </tr>
+          <tr>
+            <td>article</td>
+          </tr>
+          <tr>
+            <td colspan="2">footer</td>
+          </tr>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>
